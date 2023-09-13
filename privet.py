@@ -1,3 +1,5 @@
+#functions
+
 def privet(x):
 	return x
 
