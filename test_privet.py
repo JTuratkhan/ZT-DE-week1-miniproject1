@@ -5,10 +5,9 @@ def setup_function(function):
 	function.x = 5
 
 
-def teardown_function(function):
-	print(f"Running Teardown: {function.__name__}")
-	del function.x
+def test_multiply(x,y):
+	assert multiply(3,4) == 12
 
-def test_privet_divide():
-	assert divide(test_privet_divide.x == 4)
+def test_privet_dividex(x,y):
+	assert divide(4,2) == 2
 
