@@ -1,9 +1,7 @@
 from privet import privet, multiply, divide
 
-def setup_function(function):
-	print(f"Running Teardown: {function.__name__}")
-	function.x = 5
-
+def test_privet():
+    assert privet("Elsa") == "Elsa"
 
 def test_multiply(x,y):
 	assert multiply(3,4) == 12
